@@ -95,7 +95,12 @@ export default function App() {
           ...formErrors,
           [name]: "",
         });
-      });
+      })
+      // if the validation is unsuccessful, we can set the error message to the message
+      // returned from yup (that we created in our schema)
+      .catch((err) => {
+        
+      })
 
     setFormValues({
       ...formValues,
