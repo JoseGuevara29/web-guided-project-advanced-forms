@@ -8,7 +8,7 @@ import FriendForm from "./FriendForm";
 
 import schema from "../validation/formSchema";
 import axios from "axios";
-import * y
+import * as yup from "yup";
 
 //////////////// INITIAL STATES ////////////////
 //////////////// INITIAL STATES ////////////////
@@ -50,6 +50,7 @@ export default function App() {
   const getFriends = () => {
     // 🔥 STEP 5- IMPLEMENT! ON SUCCESS PUT FRIENDS IN STATE
     //    helper to [GET] all friends from `http://buddies.com/api/friends`
+    
   };
 
   const postNewFriend = (newFriend) => {
