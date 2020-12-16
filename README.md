@@ -27,5 +27,6 @@ In order to [POST] a new friend we must supply several required fields.
     "email": "tom@tom.com",
     "role": "tl",
     "civil": "single",
+    "hobbies": ["coding"]
   }
 ```
