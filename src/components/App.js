@@ -6,6 +6,7 @@ import FriendForm from './FriendForm'
 // 🔥 STEP 3- FLESH THE SCHEMA IN ITS OWN FILE
 // 🔥 STEP 4- IMPORT THE SCHEMA, AXIOS AND YUP
 
+import schema from '../'
 
 //////////////// INITIAL STATES ////////////////
 //////////////// INITIAL STATES ////////////////
