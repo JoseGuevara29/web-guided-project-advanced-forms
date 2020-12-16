@@ -99,8 +99,12 @@ export default function App() {
       // if the validation is unsuccessful, we can set the error message to the message
       // returned from yup (that we created in our schema)
       .catch((err) => {
-        
-      })
+        setFormErrors({
+          ...formErrors,
+          // validation error from schema
+          [name]: err.errors[0],
+        });
+      });
 
     setFormValues({
       ...formValues,
