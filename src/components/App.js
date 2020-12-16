@@ -68,7 +68,7 @@ export default function App() {
     axios
     .post('http://buddies.com/api/friends', newFriend)
     .then((res) => {
-      
+      setFriends([...])
     })
     .catch((err) => {
       console.log(err);
