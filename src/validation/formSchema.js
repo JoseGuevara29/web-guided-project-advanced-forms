@@ -2,10 +2,14 @@
 import * as yup from "yup";
 
 export default yup.object().shape({
-  username: yup.string(),
+  username: yup
+  .string()
+  .required()
+  .min(),
   email: yup.string(),
   role: yup.string(),
   civil: yup.string(),
+  // we're done with checkboxes
   hiking: yup.boolean(),
   reading: yup.boolean(),
   coding: yup.boolean(),
