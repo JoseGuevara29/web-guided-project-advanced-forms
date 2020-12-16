@@ -115,7 +115,7 @@ export default function App() {
     schema.isValid(formValues).then((valid) => {
       setDisabled(!valid);
     });
-  }, []);
+  }, [formValues]);
 
   return (
     <div className="container">
