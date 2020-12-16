@@ -107,7 +107,8 @@ export default function FriendForm(props) {
         <input 
           type='checkbox'
           name='hiking'
-          
+          // let the checkbox be checked if the value inside state resolves to true!
+          checked={}
         />
         </label>
 
