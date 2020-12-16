@@ -68,12 +68,12 @@ export default function App() {
     axios
     .post('http://buddies.com/api/friends', newFriend)
     .then((res) => {
-
+      
     })
-    .catch((err) {
+    .catch((err) => {
       console.log(err);
       debugger;
-    })
+    });
   };
 
   //////////////// EVENT HANDLERS ////////////////
