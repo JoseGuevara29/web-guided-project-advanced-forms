@@ -67,6 +67,13 @@ export default function App() {
     //    and regardless of success or failure, the form should reset
     axios
     .post('http://buddies.com/api/friends', newFriend)
+    .then((res) => {
+
+    })
+    .catch((err) {
+      console.log(err);
+      debugger;
+    })
   };
 
   //////////////// EVENT HANDLERS ////////////////
