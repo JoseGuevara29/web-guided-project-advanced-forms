@@ -82,6 +82,9 @@ export default function App() {
   //////////////// EVENT HANDLERS ////////////////
   const inputChange = (name, value) => {
     // 🔥 STEP 10- RUN VALIDATION WITH YUP
+       // yup.reach will allow us to "reach" into the schema and test only one part.
+    // We give reach the schema as the first argument, and the key we want to test as the second.
+
     setFormValues({
       ...formValues,
       [name]: value, // NOT AN ARRAY
