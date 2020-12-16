@@ -66,14 +66,14 @@ export default function App() {
     //    helper to [POST] `newFriend` to `http://buddies.com/api/friends`
     //    and regardless of success or failure, the form should reset
     axios
-    .post('http://buddies.com/api/friends', newFriend)
-    .then((res) => {
-      setFriends([...])
-    })
-    .catch((err) => {
-      console.log(err);
-      debugger;
-    });
+      .post("http://buddies.com/api/friends", newFriend)
+      .then((res) => {
+        setFriends([res.data, ...friends]);
+      })
+      .catch((err) => {
+        console.log(err);
+        debugger;
+      });
   };
 
   //////////////// EVENT HANDLERS ////////////////
