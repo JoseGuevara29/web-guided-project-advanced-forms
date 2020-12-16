@@ -112,7 +112,9 @@ export default function App() {
 
   useEffect(() => {
     // 🔥 STEP 9- ADJUST THE STATUS OF `disabled` EVERY TIME `formValues` CHANGES
-    
+    schema.isValid(formValues).then((valid) => {
+      setDisabled(!valid);
+    });
   }, []);
 
   return (
